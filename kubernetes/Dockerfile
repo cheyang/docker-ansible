@@ -2,7 +2,7 @@ FROM williamyeh/ansible:centos7
 
 MAINTAINER cheyang@163.com
 
-RUN yum install -y git && \
+RUN yum install -y git python-netaddr && \
     cd / && \
     git clone https://github.com/kubernetes/contrib.git && \
     mv /contrib/ansible /k8s-ansible && \
