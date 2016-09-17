@@ -18,9 +18,9 @@ ADD ansible/roles/kubernetes/files/easy-rsa.tar.gz /k8s-ansible/roles/kubernetes
 # replace gcr.io with local docker registry
 ADD ansible/roles/kubernetes-addons/tasks/main.yml /k8s-ansible/roles/kubernetes-addons/tasks/main.yml
 
-RUN chmod 644 /k8s-ansible/ansible.cfg
+RUN chmod 644 /k8s-ansible/scripts/ansible.cfg
 
-ENV ANSIBLE_HOST_KEY_CHECKING=False
+#ENV ANSIBLE_HOST_KEY_CHECKING=False
 
 ENV INVENTORY=/etc/ansible/hosts
 
