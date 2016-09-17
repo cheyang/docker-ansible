@@ -15,6 +15,7 @@ ADD ansible/roles/node/templates/kubelet.j2 /k8s-ansible/roles/node/templates/ku
 # Create local copies of easy-rsa
 ADD ansible/roles/kubernetes/files/make-ca-cert.sh /k8s-ansible/roles/kubernetes/files/make-ca-cert.sh
 ADD ansible/roles/kubernetes/files/easy-rsa.tar.gz /k8s-ansible/roles/kubernetes/files/easy-rsa.tar.gz
+ADD ansible/roles/kubernetes/tasks/gen_certs.yml /k8s-ansible/roles/kubernetes/tasks/gen_certs.yml
 # replace gcr.io with local docker registry
 ADD ansible/roles/kubernetes-addons/tasks/main.yml /k8s-ansible/roles/kubernetes-addons/tasks/main.yml
 
