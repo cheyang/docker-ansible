@@ -8,7 +8,7 @@ RUN yum install -y git python-netaddr && \
     mv /contrib/ansible /k8s-ansible && \
     rm -rf /contrib
 
-ADD ansible.cfg /k8s-ansible
+ADD ansible.cfg /k8s-ansible/scripts
 
 # Add Options
 ADD ansible/roles/node/templates/kubelet.j2 /k8s-ansible/roles/node/templates/kubelet.j2
