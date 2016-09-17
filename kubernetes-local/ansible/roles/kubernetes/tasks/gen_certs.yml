@@ -17,7 +17,7 @@
 - name: HACK | overwrite easy-rsa.tar.gz from local copy
   copy:
     src=easy-rsa.tar.gz
-    dest=/tmp/easy-rsa.tar.gz
+    dest=/tmp
 
 - name: HACK | overwrite make-ca-cert.sh from local copy
   copy:
